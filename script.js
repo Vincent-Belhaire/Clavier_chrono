@@ -200,8 +200,8 @@
 
   // Défi 2 — saisie exacte
   const typingTasks = [
-    "Élève n°6 : prénom.nom@college.example – 12,50 € / 20 ?",
-    "À 8 h 30, Zoé ouvre le fichier « Défi-2.odt ».",
+    "Élève n°6 : prénom.nom@college.example - 12,50 € / 20 ?",
+    "A 8 h 30, Zoé ouvre le fichier \"Défi-2.odt\".",
     "Code final : AZERTY / sécurisé ? Oui !"
   ];
   const typingModel = document.getElementById("typingModel");
@@ -216,7 +216,7 @@
   function describeChar(char) {
     if (char === undefined) return "la fin du texte";
     if (char === " ") return "un espace";
-    if (char === "–") return "un tiret long –";
+    if (char === "-") return "un tiret simple -";
     return `« ${char} »`;
   }
 
@@ -710,7 +710,12 @@
     },
     typing: {
       title: "Recopier sans perdre un signe",
-      html: `<ol><li>Lis le modèle une première fois sans écrire.</li><li>Recopie par petits groupes de 3 à 5 caractères.</li><li>Compare de gauche à droite.</li><li>Vérifie les espaces avant et après <strong>:</strong>, <strong>€</strong> et <strong>/</strong>.</li></ol><div class="help-card">Le message d’erreur donne la position de la première différence. Compte calmement jusqu’à cet endroit.</div>`
+      html: `<div class="help-card amber-help"><strong>Pour écrire É avec Alt + 144 :</strong><ol><li>Vérifie que <kbd>Verr. Num</kbd> est activé.</li><li>Garde la touche <kbd>Alt</kbd> enfoncée.</li><li>Sur le <strong>pavé numérique</strong>, tape <kbd>1</kbd> <kbd>4</kbd> <kbd>4</kbd>.</li><li>Relâche <kbd>Alt</kbd> : le caractère <strong>É</strong> apparaît.</li></ol><small>Les chiffres situés en haut du clavier ne fonctionnent pas pour ce raccourci.</small></div>
+        <ol><li>Lis le modèle une première fois sans écrire.</li><li>Recopie par petits groupes de 3 à 5 caractères.</li><li>Compare de gauche à droite.</li><li>Vérifie les espaces avant et après <strong>:</strong>, <strong>€</strong>, <strong>-</strong> et <strong>/</strong>.</li></ol>
+        <div class="help-card"><strong>Les signes du premier code :</strong><div class="key-demo"><kbd>Maj</kbd> + <kbd>)</kbd><span>→ °</span></div><div class="key-demo"><kbd>Alt Gr</kbd> + <kbd>0</kbd><span>→ @</span></div><div class="key-demo"><kbd>Alt Gr</kbd> + <kbd>E</kbd><span>→ €</span></div><div class="key-demo"><kbd>Maj</kbd> + <kbd>,</kbd><span>→ ?</span></div><div class="key-demo"><kbd>Maj</kbd> + <kbd>:</kbd><span>→ /</span></div></div>
+        <div class="help-card"><strong>Pour le tiret - :</strong> utilise la touche du tiret simple ou la touche <kbd>-</kbd> du pavé numérique. Les deux sont acceptées.</div>
+        <div class="help-card purple-help">Dans le deuxième code, le signe <strong>"</strong> s’obtient avec la touche <kbd>3 / "</kbd> sans Maj. La phrase commence par un A sans accent.</div>
+        <div class="help-card">Le message d’erreur donne la position de la première différence. Compte calmement jusqu’à cet endroit.</div>`
     },
     correction: {
       title: "Choisir Retour arrière ou Suppr",

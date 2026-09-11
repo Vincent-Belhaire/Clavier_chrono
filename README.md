@@ -34,6 +34,14 @@ Le score maximal est de **5 600 points** : 1 000 points par défi obligatoire et
 - Le site rappelle que **Maj** agit pendant qu’on la maintient, tandis que **Verr. Maj** reste actif jusqu’au prochain appui.
 - Aucun résultat n’est envoyé sur Internet. Le bouton d’impression permet de conserver le bilan final.
 
+## Caractères particuliers sur un clavier Windows
+
+- Pour obtenir **É**, activer `Verr. Num`, maintenir `Alt`, taper `144` sur le pavé numérique, puis relâcher `Alt`.
+- Les chiffres de la rangée supérieure ne fonctionnent pas pour ce raccourci : il faut utiliser le pavé numérique.
+- Le modèle utilise désormais uniquement le tiret simple `-`. La touche `-` ordinaire et celle du pavé numérique produisent le même caractère et sont toutes les deux acceptées.
+- Les guillemets français difficiles à saisir ont été remplacés par les guillemets droits `"` et la deuxième phrase commence par `A` sans accent.
+- Le coup de pouce du défi de saisie rappelle également les combinaisons pour `°`, `@`, `€`, `?`, `/` et `"` sur un clavier AZERTY.
+
 ## Barème et bilan
 
 - Chaque bonne action rapporte les points prévus pour le défi.
